@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+/* ▼ 하단에 코드를 작성하세요*/
+/*
+1. 기본 생성된 리스트 동그라미 없애주기 V
+2. 각각의 아이템을 가로 배치 (float) V
+3. 양 옆에 여백 (padding) V
+4. 아이템 사이의 간격 (margin) V
+5. active한 요소의 경우 추가 CSS V
+*/
+
+.tab-menu {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.tab-menu::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+
+.tab-menu-item {
+  float: left;
+  margin-right: 16px;
+}
+
+.tab-menu-item:hover {
+  background-color: #c4cbd5;
+}
+
+.tab-menu-item a {
+  display: block;
+  padding: 16px 20px;
+}
+
+.tab-menu-item.active {
+  border-bottom: 2px solid rgb(81, 81, 169);
+}
+
+.tab-menu-item.active a {
+  font-weight: 500;
+  color: rgb(81, 81, 169);
+}
