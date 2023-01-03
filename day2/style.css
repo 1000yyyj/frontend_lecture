@@ -12,10 +12,18 @@
   margin: 0;
 }
 
-.parent {
+.grandma {
   width: 600px;
+  background-color: rgb(228, 245, 239);
+  margin: 0 auto;
+}
+
+.parent {
+  position: relative;
+  width: 400px;
+  height: 800px;
+  margin: 0 auto;
   background-color: #efefef;
-  /* overflow: hidden; */
 }
 
 .child {
@@ -23,7 +31,6 @@
   height: 200px;
   text-align: center;
   line-height: 200px;
-  float: left;
 }
 
 .red {
@@ -32,14 +39,10 @@
 
 .yellow {
   background-color: rgb(219, 219, 121);
+  position: fixed;
+  bottom: 0;
 }
 
 .blue {
   background-color: rgb(114, 114, 193);
-}
-
-.parent::after {
-  content: "";
-  clear: left;
-  display: block;
 }
