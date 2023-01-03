@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "KIMM_Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  font-family: "KIMM_Bold", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.parent {
+  width: 600px;
+  background-color: #efefef;
+  /* overflow: hidden; */
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  float: left;
+}
+
+.red {
+  background-color: rgb(197, 110, 110);
+}
+
+.yellow {
+  background-color: rgb(219, 219, 121);
+}
+
+.blue {
+  background-color: rgb(114, 114, 193);
+}
+
+.parent::after {
+  content: "";
+  clear: left;
+  display: block;
+}
