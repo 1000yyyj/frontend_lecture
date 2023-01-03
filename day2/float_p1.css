@@ -6,6 +6,7 @@
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: -0.02em;
+  height: 100vh;
 }
 
 a {
@@ -27,16 +28,12 @@ a {
 .tab-menu {
   list-style-type: none;
   padding-left: 0;
-}
-
-.tab-menu::after {
-  content: "";
-  display: block;
-  clear: left;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: nowrap; */
 }
 
 .tab-menu-item {
-  float: left;
   margin-right: 16px;
 }
 
