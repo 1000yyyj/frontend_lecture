@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 16px; /* 1rem = 16px*/
+}
+
+.box {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #ff4949;
+  color: white;
+}
+
+.child {
+  width: 10rem; /* 160px*/
+  height: 10rem;
+  text-align: center;
+  line-height: 10rem;
+  background-color: rgb(52, 52, 35);
+}
+
+/* .box::after {
+  content: "Mobile";
+} */
+
+/* mobile 가로화면 반응형 */
+@media screen and (min-width: 480px) {
+  .box {
+    background-color: #fdd76f;
+    color: black;
+  }
+  /* .box::after {
+    content: "가로화면 Mobile";
+  } */
+}
+
+/* tablet 화면 */
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 26px; /* 1rem = 26px*/
+  }
+  .box {
+    background-color: rgb(141, 221, 194);
+    color: white;
+  }
+  /* .box::after {
+    content: "Tablet";
+  } */
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 36px;
+  }
+  .box {
+    background-color: rgb(134, 134, 245);
+  }
+  /* .box::after {
+    content: "Desktop";
+  } */
+}
