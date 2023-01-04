@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+  height: 100vh;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+/* ▼ 하단에 코드를 작성하세요 */
+
+.tab-menu {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+}
+
+.tab-menu-item {
+  margin-right: 16px;
+}
+
+.tab-menu-item:hover {
+  background-color: #c4cbd5;
+}
+
+.tab-menu-item a {
+  display: block;
+  padding: 16px 20px;
+}
+
+.tab-menu-item.active {
+  border-bottom: 2px solid rgb(81, 81, 169);
+}
+
+.tab-menu-item.active a {
+  font-weight: 500;
+  color: rgb(81, 81, 169);
+}
+
+@media screen and (max-width: 768px) {
+  .tab-menu {
+    flex-direction: column;
+  }
+}
